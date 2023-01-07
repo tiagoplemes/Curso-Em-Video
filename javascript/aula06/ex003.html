@@ -20,7 +20,16 @@
     <h1>Olá, mundo</h1> <!-- Isso é um comentário em HTML-->
     <p>Já me livrei da maldição</p>
     <script>
-        
+        var n1 = Number(prompt("Digite um numero"));
+        var n2 = Number(prompt("Digite um segundo numero"));
+        var s = n1 + n2;
+        alert("Seu a soma é " + s); 
+        /*  O '+' serve tanto para adicação como para concatenação  
+        X =  A + B
+        Se A e B foram numeros ele ira soma-lós
+        Se A e B forem string ele ira concatenalos
+        */
+       alert(`Primeiro número ${n1}, segundo número ${n2} e o valor da soma ${s}`);
     </script>
 </body>
 </html>
