@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        @font-face {
+            font-family: 'Love Story';
+            src: url('fonts/love story ttf.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        body {
+            font-size: 1em;
+        }
+        h1, h2 {
+            /*    
+            font-family: 'Work Sans', sans-serif;
+            font-weight: 800;
+            font-size: 3em;
+            font-style: italic;
+            */
+            /*  --shorthand--
+                - font-style -> font-wight -> font-size -> font-family;
+            */
+            font-family: 'Love Story';
+            font: 600 bolder 3em 'Love Story', sans-serif;
+        }
+        p {
+            font-family: cursive;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com tamanho de Fontes proprias sem ser do google</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id, molestiae recusandae quisquam, repellat et deleniti iste odit mollitia autem nisi quaerat eligendi fugiat reprehenderit. Explicabo quo eligendi expedita itaque voluptatibus nesciunt sed fuga voluptas labore optio numquam excepturi dolorum velit tenetur est enim obcaecati, aspernatur fugiat amet. Modi, esse officiis.
+    </p>
+    <h2>Subtitulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum ratione quisquam corporis sequi neque ut labore voluptate minima adipisci iure iusto autem eligendi, soluta nemo suscipit modi dolores corrupti. Doloribus distinctio quaerat fuga modi excepturi iure dolores cumque sequi optio aspernatur error, quo fugit possimus odit nostrum incidunt necessitatibus omnis.</p>
+</body>
+</html>

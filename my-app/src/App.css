@@ -1,0 +1,20 @@
+.div-dados {
+  padding-left: 500px;
+}
+
+
+.box-soma {
+  color: #FF0303;
+  background-color: #f7f7f7;
+  width: 225px;
+  height: 30px;
+  padding: 9px 10px 0px 10px;
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px #FF0303;
+}
+
+.box-soma:hover {
+  color: #f7f7f7;
+  background-color: #FF0303;
+  box-shadow: 5px 5px 5px #f7f7f7;
+}

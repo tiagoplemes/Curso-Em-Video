@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        a {
+            text-decoration: none;
+            color: red;
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: darkred;
+        }
+
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: yellow;
+        }
+
+        a:hover::after {
+            content: ' [link]';
+            color:burlywood;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li>
+            <a href="http://github.com/tiagoplemes" target="_blank" rel="noopener noreferrer">
+                Repositório no GitHub
+            </a>
+        </li>
+        <li>
+            <a href="http://www.youtube.com/@CursoemVideo" target="_blank" rel="noopener noreferrer">
+                Canal do Curso em Vídeo
+            </a>
+        </li>
+        <li>
+            <a href="http://www.hashtagtreinamentos.com/assert-em-python?gclid=Cj0KCQjww4-hBhCtARIsAC9gR3bqR9jZRA81jHtQCqYVCq46_JTVtbCpG8Nq6BZX9N4Xwh6yneOrme4aAouhEALw_wcB" target="_blank" rel="noopener noreferrer">
+                Assert em Python
+            </a>
+        </li>
+    </ul>
+</body>
+</html>
