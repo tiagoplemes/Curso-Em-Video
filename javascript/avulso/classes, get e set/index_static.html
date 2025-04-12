@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Exemplo de static e herança</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 20px;
+    }
+
+    button {
+      margin: 5px;
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+
+    #log {
+      margin-top: 20px;
+      background: #f4f4f4;
+      padding: 10px;
+      border-radius: 6px;
+      white-space: pre-line;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Herança com métodos static</h1>
+
+  <button onclick="Animal.info()">Animal.info()</button>
+  <button onclick="Cachorro.info()">Cachorro.info()</button>
+  <button onclick="Gato.info()">Gato.info()</button>
+
+  <div id="log"></div>
+
+  <script>
+    class Animal {
+      static especie = 'Desconhecida';
+
+      static info() {
+        log(`Animal.info() → Espécie: ${this.especie}`);
+      }
+    }
+
+    class Cachorro extends Animal {
+      static especie = 'Canina';
+    }
+
+    class Gato extends Animal {
+      static especie = 'Felina';
+
+      static info() {
+        log(`Gato.info() → Espécie: ${this.especie} (sobrescrito)`);
+      }
+    }
+
+    function log(texto) {
+      const logDiv = document.getElementById('log');
+      logDiv.textContent += texto + '\n';
+    }
+  </script>
+
+</body>
+</html>
